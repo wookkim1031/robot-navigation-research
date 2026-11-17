@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" font-family="Helvetica, Arial, sans-serif" font-size="15">
+  <defs>
+    <marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#333"/>
+    </marker>
+  </defs>
+  <rect width="900" height="380" fill="#ffffff"/>
+
+  <!-- left: free planning -->
+  <text x="20" y="28" font-size="17" font-weight="bold" fill="#184f95">Free planning on a map</text>
+  <rect x="20" y="42" width="410" height="270" fill="#f7f7f5" stroke="#555"/>
+  <rect x="110" y="90" width="60" height="150" fill="#333"/>
+  <rect x="210" y="42" width="50" height="120" fill="#333"/>
+  <rect x="210" y="205" width="50" height="107" fill="#333"/>
+  <rect x="320" y="110" width="50" height="130" fill="#333"/>
+  <circle cx="60" cy="270" r="9" fill="#2a78d6"/>
+  <text x="48" y="298" font-size="13" fill="#184f95">start</text>
+  <rect x="388" y="62" width="16" height="16" fill="#1baf7a"/>
+  <text x="372" y="56" font-size="13" fill="#0c6b49">goal</text>
+  <path d="M60 270 C 90 262, 96 250, 100 240 C 104 150, 120 70, 190 70 C 200 70, 196 180, 236 184 C 290 188, 300 96, 320 92 C 350 84, 370 76, 388 70" fill="none" stroke="#eb6834" stroke-width="2.5" marker-end="url(#b)"/>
+  <text x="20" y="336" font-size="13" fill="#333">The planner finds its own path each time.</text>
+  <text x="20" y="356" font-size="13" fill="#333">Flexible, but it may pick a tight gap.</text>
+
+  <!-- right: route graph -->
+  <text x="470" y="28" font-size="17" font-weight="bold" fill="#184f95">Following a recorded route</text>
+  <rect x="470" y="42" width="410" height="270" fill="#f7f7f5" stroke="#555"/>
+  <rect x="560" y="90" width="60" height="150" fill="#333"/>
+  <rect x="660" y="42" width="50" height="120" fill="#333"/>
+  <rect x="660" y="205" width="50" height="107" fill="#333"/>
+  <rect x="770" y="110" width="50" height="130" fill="#333"/>
+  <!-- corridor -->
+  <path d="M510 270 L510 66 L640 66 L640 184 L742 184 L742 70 L846 70" fill="none" stroke="#cde2fb" stroke-width="26" stroke-linejoin="round"/>
+  <path d="M510 270 L510 66 L640 66 L640 184 L742 184 L742 70 L846 70" fill="none" stroke="#2a78d6" stroke-width="2" stroke-dasharray="6 4"/>
+  <circle cx="510" cy="270" r="9" fill="#2a78d6"/>
+  <circle cx="510" cy="66" r="6" fill="#fff" stroke="#2a78d6" stroke-width="2"/>
+  <circle cx="640" cy="66" r="6" fill="#fff" stroke="#2a78d6" stroke-width="2"/>
+  <circle cx="640" cy="184" r="6" fill="#fff" stroke="#2a78d6" stroke-width="2"/>
+  <circle cx="742" cy="184" r="6" fill="#fff" stroke="#2a78d6" stroke-width="2"/>
+  <circle cx="742" cy="70" r="6" fill="#fff" stroke="#2a78d6" stroke-width="2"/>
+  <rect x="838" y="62" width="16" height="16" fill="#1baf7a"/>
+  <text x="498" y="298" font-size="13" fill="#184f95">start</text>
+  <text x="822" y="56" font-size="13" fill="#0c6b49">goal</text>
+  <text x="470" y="336" font-size="13" fill="#333">Waypoints (circles) and edges are recorded once.</text>
+  <text x="470" y="356" font-size="13" fill="#333">The robot stays inside the corridor (light blue).</text>
+</svg>
