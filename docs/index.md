@@ -35,7 +35,7 @@ The differences are in the details below.
 |---|---|
 | [Routes and waypoints](#routes) | How do commercial robots choose where to walk? |
 | [Tight spaces](#tight-spaces) | How do robots get through narrow gaps and avoid getting stuck? |
-| [People](#people) | How do robots behave around walking people? |
+| [People](#among-people) | How do robots behave around walking people? |
 | [Learned navigation](#learned) | What has machine learning added, and does it replace maps and planners? |
 | [Localisation and maps](#localisation) | How does the robot know where it is, and what map does it use? |
 
@@ -309,7 +309,7 @@ and stops the robot when commands stop arriving. The project reports no test res
 
 ---
 
-## People: how robots behave around walking visitors {#people}
+## People: how robots behave around walking visitors {#among-people}
 
 A robot in a hall with visitors has to do two things: not walk into anyone, and behave in a way people
 find normal. The first is safety engineering with standards behind it. The second is a research field
